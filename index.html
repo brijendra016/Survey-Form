@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>freeCodeCamp Survey Form</title>
+</head>
+<body>
+<h1 id="title"> Survey Form</h1> 
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+  <div class="container">
+  <label id="name-label">Name<br/><input id="name" type="text" placeholder="Enter your Name" required></input></label>
+  <label id="email-label">Email<br/><input id="email" type="email" placeholder="Enter your Email" required></input></label>
+  <label id="number-label">Age (optional)<br/><input id="number" type="number" min="18" max="45" placeholder =" Age"></input></label>
+  <div>
+  <p>Which option best describes your current role?</p>
+  <select id="dropdown">
+    <option selected disabled>Select current role</option>
+    <option>Student</option>
+    <option>Full Time Job</option>
+    <option>Other</option>
+  </select>
+</div>
+<div  id="time">
+<p>Would you recommend freeCodeCamp to a friend?</p>
+  <label for="time"><input type="radio" name="time" value="Full Time"></input>Maybe</label>
+ <label for="time"><input type="radio" name="time" value="Part Time"></input>Maybe Not</label>
+</div>
+  <div  id="last">
+ <p>What would you like to see improved? (Check all that apply)</p>
+ <label><input type="checkbox" value="JAVA">Java</label>
+ 
+ <label><input type="checkbox" value="SQL">SQL</label>
+ 
+ <label><input type="checkbox" value="Frontend">FRONT END</label>
+ 
+ <label><input type="checkbox" value="Backend">BACKEND</label>
+ </div>
+ <p>Any comments or suggestions?</p>
+ <textarea rows="8" cols="40" placeholder="Enter Comment...."></textarea>
+ <input type="submit" class="submit-btn">
+
+
+</div>
+  </form>
+</body>
+</html>
